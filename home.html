@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the home page of Jackson's website, showcasing his personal information, photo, and course details.">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/home.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+
+
+
+
+    <title>chamber Home page </title>
+</head>
+<body>
+    <header>
+        <img src="images/home.svg" alt="brand logo">
+        <span>Jackson site</span>
+        <button id="nav-btn" class="ham-btn"></button>
+    </header>
+    <nav id="nav-link" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final-project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <div class="section">
+            <section>
+                <h2>About Me</h2>
+                <p>My name is Jackson Eno,a student of BYU Idaho,i am doing software development and this is my first certificate in the school </p>
+            </section>
+            <section>
+                <h2>My photo</h2>
+                <figure>
+                    
+                    <img src="images/client-photo.jpg" alt="my photo card">
+                </figure>
+            </section>
+            <section class="course-card">
+                <h2>Web and computer programming certificate</h2>
+                <div>
+                    <button type="button" id="all">ALL</button>
+                    <button type="button" id="wdd">WDD</button>
+                    <button type="button" id="cse">CSE</button>
+
+                </div>
+                <p>Total credit earned:<span id="earned-credit"></span></p>
+                <div id="course-container" class="course-layout"></div>
+
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://github.com">
+                <img src="images/github.svg" alt="github icon">           
+            <a href="https://facebook.com">
+                <img src="images/facebook.svg" alt="facebook icon">           
+
+            <a href="https://linkedin.com">
+                <img src="images/linkedin.svg" alt="linkedin icon">
+
+            <a href="https://twitter.com">
+                <img src="images/twitter-x.svg" alt="twitter icon">           
+
+
+
+
+        </div>            
+        <p>©<span id="year"></span>💥Jackson Eno 💥Nigeria</p>
+        <p>last updated: <span id="lastModified"></span></p>
+
+    </footer>
+</body>
+</html>
+        
+        
+                    
+                
+            
+                
+            
+        
+        
+
+        
+    
+        
+    
+

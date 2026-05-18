@@ -1,0 +1,29 @@
+@media (min-width:37.5em) {
+    #nav-btn {
+		display:none; /* hide hamburger button */
+		
+	}
+    .navigation li {
+        display: block;
+    }
+    .navigation ul {
+        display:flex;
+    }
+
+
+	.navigation a {
+        display: flex;
+        flex-direction: row;
+        color: black;
+		
+		flex: 1 1 100%;
+	}
+
+    .directory-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+
+}

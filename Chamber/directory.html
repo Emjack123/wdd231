@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="this is a chamber of commerce directory page which is design to help potential investors and new business man fine connection and community to network ">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/directory.css">
     <link rel="stylesheet" href="styles/direct-larger.css">
 
     <script src="scripts/directory.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/home.js" defer></script>
+        <script src="scripts/weather.js" defer></script>
+
     <link rel="icon" href="favicon.ico">
 
 
@@ -19,18 +24,21 @@
 <body>
     <header>
         <img src="images/home.svg" alt="brand logo">
-        <span>Jackson site</span>
+        <span>Uyo Chamber</span>
         <button id="nav-btn" class="ham-btn"></button>
     </header>
     <nav id="nav-link" class="navigation">
         <ul>
-            <li class="current"><a href="#">Home</a></li>
-            <li><a href="#">Chamber project</a></li>
-            <li><a href="#">Final-project</a></li>
+            <li ><a href="index.html">Home</a></li>
+            <li class="current"><a href="#">Discovery</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="#">Join</a></li>
+
         </ul>
     </nav>
 
     <main>
+        <h1>Directory</h1>
         <div class="directory-controls">
             <button id="gridBtn" class="active" aria-label="Grid View">Grid View ⊞</button>
             <button id="listBtn" aria-label="List View">List View ☰</button>
@@ -39,6 +47,8 @@
             
 
         </article>
+        <section class="weather-container"></section>
+
     </main>
     <footer>
         <div class="social">

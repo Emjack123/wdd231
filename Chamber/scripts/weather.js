@@ -1,8 +1,5 @@
-//selecting Paths & Elements
-const gridBtn = document.querySelector('#gridBtn');
-const listBtn = document.querySelector('#listBtn');
 const dataUrl = 'data/members.json';
-const display = document.querySelector('#directory-article');
+const display = document.querySelector('#spotlight-container');
 
 // 1. Asynchronously Fetch Data
 async function getMemberData() {
@@ -47,22 +44,4 @@ function displayMembers(members) {
     display.appendChild(card);
   });
 }
-
-// 3. Handling  Grid and List View Toggle
-gridBtn.addEventListener('click', () => {
-  display.classList.add('grid-layout');
-  display.classList.remove('list-layout');
-  gridBtn.classList.add('active');
-  listBtn.classList.remove('active');
-});
-
-listBtn.addEventListener('click', () => {
-  display.classList.add('list-layout');
-  display.classList.remove('grid-layout');
-  listBtn.classList.add('active');
-  gridBtn.classList.remove('active');
-});
-
-
-// Run on page load
 getMemberData();

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the membership application page for the Chamber of Commerce, designed to facilitate new member sign-ups and provide detailed information about various membership levels and their benefits.">
+    
+    <meta name="author" content="jackson eno">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/directory.css">       <link rel="stylesheet" href="styles/landing.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/direct-larger.css">
+
+
+    <script src="scripts/join.js" defer></script>
+    <script src="scripts/home.js" defer></script>
+
+    <title>membership join page</title>
+</head>
+<body>
+    
+    <header>
+        <img src="images/home.svg" alt="brand logo">
+        <span>Uyo Chamber</span>
+        <button id="nav-btn" class="ham-btn"></button>
+    </header>
+    <nav id="nav-link" class="navigation">
+        <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="#">Discovery</a></li>
+            <li><a href="directory.html">Directory</a></li>
+
+            <li class="current"><a href="join.html">Join chamber</a></li>
+        </ul>
+    </nav>
+    
+</body>
+    <h1>Join page</h1>
+
+    <main class="join-container">
+        
+        <section class="form-section">
+            <h2>Membership Application</h2>
+            <form method="get" action="thankyou.html">
+                
+                <label>First Name *
+                    <input type="text" name="firstName" autocomplete="given-name" title="Applicant's First Name" required>
+                </label>
+
+                <label>Last Name *
+                    <input type="text" name="lastName" autocomplete="family-name" title="Applicant's Last Name" required>
+                </label>
+
+                <label>Organizational Title
+                    <input type="text" name="orgTitle" autocomplete="organization-title" title="Your title within the organization. Minimum 7 characters, alphabetic, hyphens, and spaces only." pattern="[A-Za-z\s\-]{7,}">
+                </label>
+
+                <label>Email Address *
+                    <input type="email" name="email" autocomplete="email" title="Applicant's Email Address" placeholder="example@domain.com" required>
+                </label>
+
+                <label>Mobile Phone Number *
+                    <input type="tel" name="phone" autocomplete="tel" title="Applicant's Mobile Phone Number" required>
+                </label>
+
+                <label>Business/Organization Name *
+                    <input type="text" name="orgName" autocomplete="organization" title="Business or Organization Name" required>
+                </label>
+
+                <label>Membership Level *
+                    <select name="membershipLevel" title="Select your desired membership level" required>
+                        <option value="" disabled selected>Select a level...</option>
+                        <option value="np">NP Membership (Non-Profit - No Fee)</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+
+                <label>Business/Organization Description
+                    <textarea name="description" title="Brief description of your business or organization" rows="4"></textarea>
+                </label>
+
+                <input type="hidden" name="timestamp" id="form-timestamp">
+
+                <input type="submit" value="Submit Application">
+            </form>
+        </section>
+
+        <section class="cards-section">
+            <h2>Membership Levels</h2>
+            <div class="membership-cards">
+                <div class="card level-np">
+                    <h3>NP Membership</h3>
+                    <button type="button" class="open-modal-btn" data-modal="modal-np">Learn More & Benefits</button>
+                </div>
+                <div class="card level-bronze">
+                    <h3>Bronze Membership</h3>
+                    <button type="button" class="open-modal-btn" data-modal="modal-bronze">Learn More & Benefits</button>
+                </div>
+                <div class="card level-silver">
+                    <h3>Silver Membership</h3>
+                    <button type="button" class="open-modal-btn" data-modal="modal-silver">Learn More & Benefits</button>
+                </div>
+                <div class="card level-gold">
+                    <h3>Gold Membership</h3>
+                    <button type="button" class="open-modal-btn" data-modal="modal-gold">Learn More & Benefits</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <dialog id="modal-np" class="membership-modal">
+        <div class="modal-content">
+            <button type="button" class="close-modal-btn">&times;</button>
+            <h3>NP Membership Details</h3>
+            <p><strong>Cost:</strong> Free (For registered Non-Profit Organizations)</p>
+            <ul>
+                <li>Basic directory listing on the Chamber website.</li>
+                <li>Access to monthly community networking mixers.</li>
+                <li>Standard newsletter subscription.</li>
+            </ul>
+        </div>
+    </dialog>
+
+    <dialog id="modal-bronze" class="membership-modal">
+        <div class="modal-content">
+            <button type="button" class="close-modal-btn">&times;</button>
+            <h3>Bronze Membership Details</h3>
+            <p><strong>Cost:</strong> $150 / Year</p>
+            <ul>
+                <li>Enhanced business directory listing with logo.</li>
+                <li>Member-to-member discount program inclusion.</li>
+                <li>2 tickets to annual business forum seminars.</li>
+            </ul>
+        </div>
+    </dialog>
+
+    <dialog id="modal-silver" class="membership-modal">
+        <div class="modal-content">
+            <button type="button" class="close-modal-btn">&times;</button>
+            <h3>Silver Membership Details</h3>
+            <p><strong>Cost:</strong> $300 / Year</p>
+            <ul>
+                <li>All Bronze benefits included.</li>
+                <li>10% discount on local event advertising spaces.</li>
+                <li>Free access to regional training workshops for up to 3 staff members.</li>
+                <li>Quarterly dynamic spotlight feature options.</li>
+            </ul>
+        </div>
+    </dialog>
+
+    <dialog id="modal-gold" class="membership-modal">
+        <div class="modal-content">
+            <button type="button" class="close-modal-btn">&times;</button>
+            <h2>Gold Membership Details</h2>
+            <p><strong>Cost:</strong> $500 / Year</p>
+            <ul>
+                <li>All Silver benefits included.</li>
+                <li>Permanent homepage spotlight rotation.</li>
+                <li>Free access to all premium chamber events and VIP networking tables.</li>
+                <li>Complimentary booth at the annual Chamber Business Expo.</li>
+            </ul>
+        </div>
+    </dialog>
+    <footer>
+        <div class="social">
+            <a href="https://github.com">
+                <img src="images/github.svg" alt="github icon">           
+            <a href="https://facebook.com">
+                <img src="images/facebook.svg" alt="facebook icon">           
+
+            <a href="https://linkedin.com">
+                <img src="images/linkedin.svg" alt="linkedin icon">
+
+            <a href="https://twitter.com">
+                <img src="images/twitter-x.svg" alt="twitter icon">           
+            </div>            
+            <p>©<span id="year"></span>💥Uyo chamber of commerce 💥Nigeria</p>
+            <p>last updated: <span id="lastModified"></span></p>
+    
+    </footer>
+    
+</body>
+</html>

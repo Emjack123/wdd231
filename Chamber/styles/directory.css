@@ -190,7 +190,7 @@
 
 .tier-1 { background-color: #e0e0e0; color: #333; }
 .tier-2 { background-color: #d1d8e0; color: #2c3e50; border: 1px solid #778ca3; }
-.tier-3 { background-color: #ffeaa7; color: #d63031; border: 1px solid #fdcb6e; }
+.ti6er-3 { background-color: #ffeaa7; color: #d63031; border: 1px solid #fdcb6e; }
 
 /* Responsive break behavior for list container */
 @media (max-width: 768px) {

@@ -1,0 +1,97 @@
+/* --- Base Card Styles --- */
+.card {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* --- Hero & CTA Elements --- */
+.hero-panel {
+  position: relative;
+  margin-bottom: 20px;
+}
+.hero-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  max-height: 400px;
+}
+.cta-box {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 6px;
+  max-width: 300px;
+  border-left: 5px solid #0056b3; /* Primary Color Accent */
+}
+.cta-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #0056b3;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+.cta-btn:hover {
+  background-color: #003366;
+}
+
+/* --- Weather Component UI --- */
+.weather-main-info {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+#forecast-container {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.forecast-day-card {
+  flex: 1;
+  background: #f1f3f5;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+.forecast-day-card span {
+  display: block;
+}
+.forecast-date { font-weight: bold; }
+.forecast-temp { color: #dc3545; font-weight: 600; }
+
+/* --- Spotlight Sections --- */
+#spotlight-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+}
+.spotlight-card {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+}
+.spotlight-card h4 {
+  margin-top: 1.5px;
+  border-bottom: 2px solid #e9ecef;
+  padding-bottom: 5px;
+}
+.spotlight-body {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-top: 10px;
+}

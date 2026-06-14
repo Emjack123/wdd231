@@ -1,0 +1,72 @@
+[
+  {
+    "name": "young shall Grow motors",
+    "address": "42 Aba Owerri Road, Suite 100",
+    "phone": "(555) 019-2834",
+    "website": "https://www.nexustech.example.com",
+    "image": "../images/logo1.png",
+    "membershipLevel": 3,
+    "established": 2015,
+    "tagline": "Connecting your business to the future."
+  },
+  {
+    "name": "AkTC Transport Services",
+    "address": "789 Harvest Lane",
+    "phone": "(555) 014-7721",
+    "website": "https://www.aktctransport.com",
+    "image": "../images/logo2.png",
+    "membershipLevel": 2,
+    "established": 2018,
+    "tagline": "Pure, locally-sourced organic wellness."
+  },
+  {
+    "name": "Apex Marketing Group",
+    "address": "1200 Corporate Blvd, Plaza Level",
+    "phone": "(555) 017-8833",
+    "website": "https://www.apexmarketing.example.com",
+    "image": "../images/logo7.png",
+    "membershipLevel": 1,
+    "established": 2021,
+    "tagline": "Elevate your brand strategy."
+  },
+  {
+    "name": "Summit Financial Advisors",
+    "address": "550 Capital Tower, Floor 14",
+    "phone": "(555) 012-9900",
+    "website": "https://www.summitfinance.example.com",
+    "image": "../images/logo8.png",
+    "membershipLevel": 3,
+    "established": 2010,
+    "tagline": "Securing your wealth across generations."
+  },
+  {
+    "name": "Vanguard Logistics",
+    "address": "900 Freight Way, Dock B",
+    "phone": "(555) 015-4411",
+    "website": "https://www.vanguardlogistics.example.com",
+    "image": "../images/logo9.png",
+    "membershipLevel": 2,
+    "established": 2013,
+    "tagline": "Moving industry forward safely and fast."
+  },
+  {
+    "name": "faith travels",
+    "address": "14 Aba road Breeze Court",
+    "phone": "(555) 011-2233",
+    "website": "https://www.bluehorizontravel.example.com",
+    "image": "../images/logo6.png",
+    "membershipLevel": 1,
+    "established": 2024,
+    "tagline": "Your gateway to unforgettable journeys."
+  },
+  {
+    "name": "Pinnacle Architecture",
+    "address": "303 Draftsman Road",
+    "phone": "(555) 016-5544",
+    "website": "https://www.pinnaclearch.example.com",
+    "image": "../images/logo7.png",
+    "membershipLevel": 3,
+    "established": 2008,
+    "tagline": "Designing functional structural masterworks."
+  }
+]

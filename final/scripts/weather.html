@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts/landing.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+   <main class="home-grid">
+        <section class="hero-panel">
+            <picture>
+                <source media="(min-width: 800px)" srcset="images/hero-large.jpg">
+                <img src="images/hero-medium.jpg" alt="Chamber Hero Banner showcasing community business center" class="hero-img">
+            </picture>
+            <div class="hero-cta">
+                <h2>Empowering Local Business</h2>
+                <p>Join our thriving network of innovators, entrepreneurs, and community leaders today.</p>
+                <a href="join.html" class="cta-btn">Join the Chamber</a>
+            </div>
+        </section>
+
+        <section class="card events-card">
+            <h3>Upcoming Events</h3>
+            <hr>
+            <div class="event-item">
+                <h4>Annual Business Expo 2026</h4>
+                <p class="date">June 15th at 9:00 AM</p>
+                <p>Network with over 100 local vendors and expand your operational reach.</p>
+            </div>
+            <div class="event-item">
+                <h4>Tech Innovation Breakfast</h4>
+                <p class="date">July 2nd at 7:30 AM</p>
+                <p>Discuss emerging technology impacts within the state's commercial landscape.</p>
+            </div>
+        </section>
+
+        <section class="card weather-card">
+            <h3>Local Weather</h3>
+            <hr>
+            <div id="weather-current">
+                <p>Loading current weather...</p>
+            </div>
+            <h4>3-Day Forecast</h4>
+            <div id="weather-forecast" class="forecast-container">
+                </div>
+        </section>
+
+        <section id="spotlight-container" class="spotlight-section">
+            <h3>Premium Member Spotlights</h3>
+            
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Chamber of Commerce | Full-Stack Learner Portfolio</p>
+        <p>Location: Uyo, Akwa Ibom, Nigeria</p>
+        <p id="last-modified"></p>
+    </footer>
+
+</body>
+</html>

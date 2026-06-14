@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is a landing page for urban ride.it provide a call to action with an hero image focusing on logistics.">
+    <meta name="author" content="jackson eno">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/directory.css">   
+    <link rel="stylesheet" href="styles/landing.css">
+    <link rel="stylesheet" href="styles/weather.css">
+
+
+    <link rel="stylesheet" href="styles/direct-larger.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="scripts/weather.js" defer></script>
+
+    <script src="scripts/landing.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/home.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+
+
+    <title>Urban-Ride</title>
+</head>
+<body>
+    <header>
+        <img src="images/home.svg" alt="brand logo">
+        <span>Urban-Ride</span>
+        <button id="nav-btn" class="ham-btn"></button>
+    </header>
+    <nav id="nav-link" class="navigation">
+        <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+
+            <li><a href="membership.html"> Membership</a></li>
+        </ul>
+    </nav>
+    
+</body>
+    <h1>Home</h1>
+    <main class="home-grid">
+        <section class="hero-panel">
+            <picture>
+                <source media="(min-width: 800px)" srcset="images/logistics.jpg">
+                <img src="images/truck.jpg" alt="Chamber Hero Banner showcasing community business center" class="hero-img">
+            </picture>
+            <div class="hero-cta">
+                <h2>Revolutionizing urban trucking</h2>
+                <p>Sign up for our thriving network of innovators, entrepreneurs, and community leaders today.</p>
+                <a href="membership.html" class="cta-btn">Sign Up</a>
+            </div>
+        </section>
+
+        <section class="card events-card">
+            <h3>Upcoming Events</h3>
+            <hr>
+            <div class="event-item">
+                <h3>Annual Business Expo 2026</h3>
+                <p class="date">June 15th at 9:00 AM</p>
+                <p>Network with over 100 local vendors and expand your operational reach.</p>
+            </div>
+            <div class="event-item">
+                <h3>commuters Innovation Breakfast</h3>
+                <p class="date">July 2nd at 7:30 AM</p>
+                <p>Discuss emerging technology impacts within the state's commercial landscape.</p>
+            </div>
+        </section>
+
+        
+        <section  class="spotlight-section">
+            <h4>Premium Member Spotlights</h4>
+            <div id="spotlight-container"  class="spotlight-grid"></div>
+            
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://github.com">
+                <img src="images/github.svg" alt="github icon">           
+            <a href="https://facebook.com">
+                <img src="images/facebook.svg" alt="facebook icon">           
+
+            <a href="https://linkedin.com">
+                <img src="images/linkedin.svg" alt="linkedin icon">
+
+            <a href="https://twitter.com">
+                <img src="images/twitter-x.svg" alt="twitter icon">           
+            </div>            
+            <p>©<span id="year"></span>💥Urban-Ride 💥Nigeria</p>
+            <p>last updated: <span id="lastModified"></span></p>
+    
+    </footer>
+</html>
